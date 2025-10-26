@@ -1,0 +1,35 @@
+{"level":30,"time":"2025-10-26T00:35:36.576Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Listening on 127.0.0.1:61538"}
+(node:3376) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-10-26T00:35:36.662Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-10-26T00:35:37.257Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-10-26T00:35:37.259Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-10-26T00:35:37.259Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-10-26T00:35:37.278Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-10-26T00:35:37.279Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-10-26T00:35:37.322Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Changed active context"}
+{"level":30,"time":"2025-10-26T00:35:37.560Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Video path: undefined"}
+{"level":30,"time":"2025-10-26T00:35:37.560Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Changed active page"}
+{"level":30,"time":"2025-10-26T00:35:41.850Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method newPage"}
+{"level":30,"time":"2025-10-26T00:35:41.868Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method getText"}
+{"level":30,"time":"2025-10-26T00:35:41.869Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Strict mode is enabled, find Locator with h2 in page."}
+{"level":30,"time":"2025-10-26T00:35:41.961Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Retrieved text for element h2 containing Register"}
+{"level":30,"time":"2025-10-26T00:35:41.961Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method getText"}
+{"level":30,"time":"2025-10-26T00:35:42.077Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.085Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.093Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.099Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.105Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.108Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.115Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.120Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.125Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Changed active context"}
+{"level":30,"time":"2025-10-26T00:35:42.126Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Changing current active page: page=c584666a-5630-4b27-a701-ee53c11ed12d"}
+{"level":30,"time":"2025-10-26T00:35:42.126Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Changed active page"}
+{"level":30,"time":"2025-10-26T00:35:42.133Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-10-26T00:35:42.155Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Removed page=43752dc5-ad43-47d9-ab91-06abea3ae93a from context=1be3bb1d-ddf0-429b-8b54-46266993912b page stack"}
+{"level":30,"time":"2025-10-26T00:35:42.211Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-10-26T00:35:42.310Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:42.310Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-10-26T00:35:43.161Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-10-26T00:35:43.351Z","pid":3376,"hostname":"Note-Ines-EDP","msg":"End of node method closeAllBrowsers"}

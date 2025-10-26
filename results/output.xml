@@ -1,56 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-10-25T17:07:34.266207" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-10-25T21:35:34.867599" rpa="false" schemaversion="5">
 <suite id="s1" name="AutoDemoSite" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite">
-<suite id="s1-s1" name="Register" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite\register.robot">
-<test id="s1-s1-t1" name="Deve acessar a tela Register" line="8">
+<suite id="s1-s1" name="Tests" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite\tests">
+<suite id="s1-s1-s1" name="Register" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite\tests\register.robot">
+<test id="s1-s1-s1-t1" name="Validar a obrigatoriedade do campo FullName" line="42">
+<kw name="Get Faker Register" owner="Register">
+<msg time="2025-10-25T21:35:35.463529" level="INFO">${register} = {'firtName': &lt;bound method Provider.first_name of &lt;faker.providers.person.pt_BR.Provider object at 0x0000020FDB924C20&gt;&gt;, 'lastName': &lt;bound method Provider.last_name of &lt;faker.providers.person.pt_BR.P...</msg>
+<var>${register}</var>
+<status status="PASS" start="2025-10-25T21:35:35.462902" elapsed="0.001098"/>
+</kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2025-10-25T17:07:34.509876" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\c825927c-9727-4e4d-84a2-0bcb2d4977c0"}</msg>
-<msg time="2025-10-25T17:07:34.544054" level="INFO">Starting Browser process D:\Programas Instalados\Python3\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51838</msg>
-<msg time="2025-10-25T17:07:36.007063" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\c825927c-9727-4e4d-84a2-0bcb2d4977c0"}</msg>
+<msg time="2025-10-25T21:35:35.465554" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\18978cbc-8731-4836-afa1-0957efa7fcbf"}</msg>
+<msg time="2025-10-25T21:35:35.515686" level="INFO">Starting Browser process D:\Programas Instalados\Python3\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61538</msg>
+<msg time="2025-10-25T21:35:37.266975" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\18978cbc-8731-4836-afa1-0957efa7fcbf"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-10-25T17:07:34.508497" elapsed="1.500005"/>
+<status status="PASS" start="2025-10-25T21:35:35.464563" elapsed="1.804408"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-10-25T17:07:39.126087" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Index.html</msg>
-<msg time="2025-10-25T17:07:39.127075" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>url=https://demo.automationtesting.in/Index.html</arg>
+<msg time="2025-10-25T21:35:41.857665" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
+<msg time="2025-10-25T21:35:41.859190" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=https://demo.automationtesting.in/Register.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-10-25T17:07:36.009416" elapsed="3.118223"/>
-</kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2025-10-25T17:07:39.153865" level="INFO">Title: 'Index'</msg>
-<arg>equal</arg>
-<arg>Index</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-10-25T17:07:39.128615" elapsed="0.025519"/>
-</kw>
-<kw name="Get Element" owner="Browser">
-<msg time="2025-10-25T17:07:39.185585" level="INFO">Locator found successfully.</msg>
-<arg>selector=#enterimg</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-10-25T17:07:39.154504" elapsed="0.031763"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-10-25T17:07:39.187527" level="INFO">Clicks the element '#enterimg'.</msg>
-<arg>selector=#enterimg</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-10-25T17:07:39.186792" elapsed="0.388861"/>
+<status status="PASS" start="2025-10-25T21:35:37.271995" elapsed="4.588872"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-10-25T17:07:41.027732" level="INFO">Text: 'Register'</msg>
+<msg time="2025-10-25T21:35:41.967519" level="INFO">Text: 'Register'</msg>
 <arg>h2</arg>
 <arg>equal</arg>
 <arg>Register</arg>
@@ -58,33 +38,55 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-10-25T17:07:39.576211" elapsed="1.452068"/>
+<status status="PASS" start="2025-10-25T21:35:41.862136" elapsed="0.106710"/>
+</kw>
+<kw name="Submit register form">
+<msg time="2025-10-25T21:35:41.971456" level="FAIL">Keyword 'Submit register form' expected 3 arguments, got 4.</msg>
+<arg>${register}</arg>
+<arg>input[value=Male]</arg>
+<arg>css=input[value=Male]</arg>
+<arg>css=input[value=Cricket]</arg>
+<status status="FAIL" start="2025-10-25T21:35:41.970185" elapsed="0.014890">Keyword 'Submit register form' expected 3 arguments, got 4.</status>
+</kw>
+<kw name="Get Element" owner="Browser">
+<arg>selector=#submitbtn</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="NOT RUN" start="2025-10-25T21:35:41.986206" elapsed="0.000890"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-25T21:35:41.987874" elapsed="0.001640"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2025-10-25T17:07:41.283606" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-10-25T17:07:41.028650" elapsed="0.255619"/>
+<status status="NOT RUN" start="2025-10-25T21:35:41.990764" elapsed="0.000720"/>
 </kw>
-<msg time="2025-10-25T17:07:41.323372" level="INFO">Switching context to context=7c6bc14f-57b7-434a-9e2e-1851597b2a0d in CURRENT</msg>
-<msg time="2025-10-25T17:07:41.334292" level="INFO">Successfully changed active context: context=7c6bc14f-57b7-434a-9e2e-1851597b2a0d</msg>
-<msg time="2025-10-25T17:07:41.388987" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-10-25T17:07:34.503630" elapsed="6.781016"/>
+<msg time="2025-10-25T21:35:42.112294" level="INFO">Switching context to context=1be3bb1d-ddf0-429b-8b54-46266993912b in CURRENT</msg>
+<msg time="2025-10-25T21:35:42.132526" level="INFO">Successfully changed active context: context=1be3bb1d-ddf0-429b-8b54-46266993912b</msg>
+<msg time="2025-10-25T21:35:42.215140" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-10-25T21:35:35.456483" elapsed="6.536362">Keyword 'Submit register form' expected 3 arguments, got 4.</status>
 </test>
 <doc>Suite de teste com RobotFramework na tela Register</doc>
-<status status="PASS" start="2025-10-25T17:07:34.328875" elapsed="7.066283"/>
+<status status="FAIL" start="2025-10-25T21:35:34.953138" elapsed="7.297924"/>
 </suite>
-<status status="PASS" start="2025-10-25T17:07:34.275253" elapsed="7.145484"/>
+<status status="FAIL" start="2025-10-25T21:35:34.924403" elapsed="7.391304"/>
+</suite>
+<status status="FAIL" start="2025-10-25T21:35:34.878744" elapsed="7.445326"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="AutoDemoSite" id="s1" pass="1" fail="0" skip="0">AutoDemoSite</stat>
-<stat name="Register" id="s1-s1" pass="1" fail="0" skip="0">AutoDemoSite.Register</stat>
+<stat name="AutoDemoSite" id="s1" pass="0" fail="1" skip="0">AutoDemoSite</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">AutoDemoSite.Tests</stat>
+<stat name="Register" id="s1-s1-s1" pass="0" fail="1" skip="0">AutoDemoSite.Tests.Register</stat>
 </suite>
 </statistics>
 <errors>
