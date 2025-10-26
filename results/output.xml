@@ -1,36 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-10-25T21:35:34.867599" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-10-25T22:57:33.439305" rpa="false" schemaversion="5">
 <suite id="s1" name="AutoDemoSite" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite">
 <suite id="s1-s1" name="Tests" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite\tests">
 <suite id="s1-s1-s1" name="Register" source="D:\Pessoais\Cursos\Automation\Robot\AutoDemoSite\tests\register.robot">
-<test id="s1-s1-s1-t1" name="Validar a obrigatoriedade do campo FullName" line="42">
+<test id="s1-s1-s1-t1" name="Validar a obrigatoriedade do campo FullName" line="19">
 <kw name="Get Faker Register" owner="Register">
-<msg time="2025-10-25T21:35:35.463529" level="INFO">${register} = {'firtName': &lt;bound method Provider.first_name of &lt;faker.providers.person.pt_BR.Provider object at 0x0000020FDB924C20&gt;&gt;, 'lastName': &lt;bound method Provider.last_name of &lt;faker.providers.person.pt_BR.P...</msg>
+<msg time="2025-10-25T22:57:34.061882" level="INFO">${register} = {'firstName': 'Emanuel', 'lastName': 'Fonseca', 'address': 'Conjunto Martins\nJuliana\n79368307 Oliveira de Goiás / PA', 'email': 'wrocha@example.net', 'phone': '51 6610 6438', 'pass': 'Abs@123', 'con...</msg>
 <var>${register}</var>
-<status status="PASS" start="2025-10-25T21:35:35.462902" elapsed="0.001098"/>
+<status status="PASS" start="2025-10-25T22:57:34.061115" elapsed="0.001025"/>
 </kw>
+<kw name="Acessar a tela Register" owner="Base">
+<kw name="Acessar a URL Login" owner="Base">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-10-25T21:35:35.465554" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\18978cbc-8731-4836-afa1-0957efa7fcbf"}</msg>
-<msg time="2025-10-25T21:35:35.515686" level="INFO">Starting Browser process D:\Programas Instalados\Python3\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61538</msg>
-<msg time="2025-10-25T21:35:37.266975" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\18978cbc-8731-4836-afa1-0957efa7fcbf"}</msg>
+<msg time="2025-10-25T22:57:34.066046" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\14aad211-5ca7-471f-acc0-8c9fe0f367d6"}</msg>
+<msg time="2025-10-25T22:57:34.103451" level="INFO">Starting Browser process D:\Programas Instalados\Python3\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53910</msg>
+<msg time="2025-10-25T22:57:36.975585" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Pessoais\\Cursos\\Automation\\Robot\\AutoDemoSite\\results\\browser\\traces\\temp\\14aad211-5ca7-471f-acc0-8c9fe0f367d6"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-10-25T21:35:35.464563" elapsed="1.804408"/>
+<status status="PASS" start="2025-10-25T22:57:34.064707" elapsed="2.914206"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-10-25T21:35:41.857665" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
-<msg time="2025-10-25T21:35:41.859190" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>url=https://demo.automationtesting.in/Register.html</arg>
+<msg time="2025-10-25T22:57:40.125163" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Index.html</msg>
+<msg time="2025-10-25T22:57:40.125942" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=https://demo.automationtesting.in/Index.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-10-25T21:35:37.271995" elapsed="4.588872"/>
+<status status="PASS" start="2025-10-25T22:57:36.979612" elapsed="3.147306"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-10-25T22:57:40.152776" level="INFO">Title: 'Index'</msg>
+<arg>equal</arg>
+<arg>Index</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-10-25T22:57:40.127599" elapsed="0.025532"/>
+</kw>
+<status status="PASS" start="2025-10-25T22:57:34.063901" elapsed="6.089404"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-10-25T22:57:40.186371" level="INFO">Locator found successfully.</msg>
+<arg>css=#enterimg</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-10-25T22:57:40.153503" elapsed="0.033280"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-25T22:57:40.187604" level="INFO">Clicks the element 'css=#enterimg'.</msg>
+<arg>css=#enterimg</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-25T22:57:40.186979" elapsed="0.422983"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-25T22:57:42.113362" level="INFO">Waited for Element with selector css=h2 &gt;&gt; text=Register at state visible</msg>
+<arg>css=h2 &gt;&gt; text=Register</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-25T22:57:40.610804" elapsed="1.503233"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-10-25T21:35:41.967519" level="INFO">Text: 'Register'</msg>
+<msg time="2025-10-25T22:57:42.154628" level="INFO">Text: 'Register'</msg>
 <arg>h2</arg>
 <arg>equal</arg>
 <arg>Register</arg>
@@ -38,44 +78,135 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-10-25T21:35:41.862136" elapsed="0.106710"/>
+<status status="PASS" start="2025-10-25T22:57:42.114334" elapsed="0.041441"/>
 </kw>
-<kw name="Submit register form">
-<msg time="2025-10-25T21:35:41.971456" level="FAIL">Keyword 'Submit register form' expected 3 arguments, got 4.</msg>
-<arg>${register}</arg>
-<arg>input[value=Male]</arg>
-<arg>css=input[value=Male]</arg>
-<arg>css=input[value=Cricket]</arg>
-<status status="FAIL" start="2025-10-25T21:35:41.970185" elapsed="0.014890">Keyword 'Submit register form' expected 3 arguments, got 4.</status>
+<status status="PASS" start="2025-10-25T22:57:34.062824" elapsed="8.093317"/>
 </kw>
-<kw name="Get Element" owner="Browser">
-<arg>selector=#submitbtn</arg>
-<tag>Getter</tag>
+<kw name="Preencher o campo First Name" owner="Register">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-25T22:57:42.158464" level="INFO">Fills the text '' in the given field.</msg>
+<arg>css=input[placeholder^=First]</arg>
+<arg>${firstName}</arg>
 <tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="NOT RUN" start="2025-10-25T21:35:41.986206" elapsed="0.000890"/>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-25T22:57:42.157617" elapsed="0.030239"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2025-10-25T22:57:42.156658" elapsed="0.031552"/>
+</kw>
+<kw name="Preencher o campo Last Name" owner="Register">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-25T22:57:42.190938" level="INFO">Fills the text 'Fonseca' in the given field.</msg>
+<arg>css=input[placeholder^=Last]</arg>
+<arg>${lastName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-25T22:57:42.189946" elapsed="0.049383"/>
+</kw>
+<arg>${register}[lastName]</arg>
+<status status="PASS" start="2025-10-25T22:57:42.188805" elapsed="0.050709"/>
+</kw>
+<kw name="Preencher o campo Address" owner="Register">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-25T22:57:42.240906" level="INFO">Fills the text 'Conjunto Martins
+Juliana
+79368307 Oliveira de Goiás / PA' in the given field.</msg>
+<arg>css=textarea[ng-model=Adress]</arg>
+<arg>${address}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-25T22:57:42.240366" elapsed="0.021805"/>
+</kw>
+<arg>${register}[address]</arg>
+<status status="PASS" start="2025-10-25T22:57:42.239799" elapsed="0.022857"/>
+</kw>
+<kw name="Preencher o campo Email" owner="Register">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-25T22:57:42.266437" level="INFO">Fills the text 'wrocha@example.net' in the given field.</msg>
+<arg>css=input[ng-model=EmailAdress]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-25T22:57:42.265416" elapsed="0.016615"/>
+</kw>
+<arg>${register}[email]</arg>
+<status status="PASS" start="2025-10-25T22:57:42.263762" elapsed="0.018457"/>
+</kw>
+<kw name="Preencher o campo Phone" owner="Register">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-25T22:57:42.284365" level="INFO">Fills the text '51 6610 6438' in the given field.</msg>
+<arg>css=input[ng-model=Phone]</arg>
+<arg>${phone}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-25T22:57:42.283068" elapsed="0.024704"/>
+</kw>
+<arg>${register}[phone]</arg>
+<status status="PASS" start="2025-10-25T22:57:42.282492" elapsed="0.025646"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-10-25T22:57:42.325594" level="INFO">Waited for Element with selector css=input[value="Male"] at state visible</msg>
+<arg>css=input[value="Male"]</arg>
+<arg>visible</arg>
 <arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-10-25T21:35:41.987874" elapsed="0.001640"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
 <tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2025-10-25T21:35:41.990764" elapsed="0.000720"/>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-10-25T22:57:42.308635" elapsed="0.019522"/>
 </kw>
-<msg time="2025-10-25T21:35:42.112294" level="INFO">Switching context to context=1be3bb1d-ddf0-429b-8b54-46266993912b in CURRENT</msg>
-<msg time="2025-10-25T21:35:42.132526" level="INFO">Successfully changed active context: context=1be3bb1d-ddf0-429b-8b54-46266993912b</msg>
-<msg time="2025-10-25T21:35:42.215140" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2025-10-25T21:35:35.456483" elapsed="6.536362">Keyword 'Submit register form' expected 3 arguments, got 4.</status>
+<kw name="Selecionar uma opção de Genero" owner="Register">
+<kw name="Check Checkbox" owner="Browser">
+<msg time="2025-10-25T22:57:42.701166" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-25T22:57:42.702101" level="INFO">See also file:///D:/Pessoais/Cursos/Automation/Robot/AutoDemoSite/results/playwright-log.txt for additional details.</msg>
+<msg time="2025-10-25T22:57:42.702805" level="FAIL">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=input[value="Male"]". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=input[value="Male"]
+</msg>
+<arg>css=${gender}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="FAIL" start="2025-10-25T22:57:42.330840" elapsed="0.399163">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=input[value="Male"]". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=input[value="Male"]
+</status>
+</kw>
+<arg>css=input[value="Male"]</arg>
+<status status="FAIL" start="2025-10-25T22:57:42.329368" elapsed="0.401445">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=input[value="Male"]". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=input[value="Male"]
+</status>
+</kw>
+<kw name="Selecionar um Hobby" owner="Register">
+<arg>css=input[value="Movies"]</arg>
+<status status="NOT RUN" start="2025-10-25T22:57:42.732769" elapsed="0.000495"/>
+</kw>
+<kw name="Clicar no botão Submit" owner="Register">
+<status status="NOT RUN" start="2025-10-25T22:57:42.734047" elapsed="0.001115"/>
+</kw>
+<kw name="Exibe mensagem de alerta" owner="Register">
+<arg>Preencha este campo.</arg>
+<status status="NOT RUN" start="2025-10-25T22:57:42.736162" elapsed="0.001041"/>
+</kw>
+<msg time="2025-10-25T22:57:42.822034" level="INFO">Switching context to context=1a1c0c89-3a14-40b2-96d8-1fa87355d937 in CURRENT</msg>
+<msg time="2025-10-25T22:57:42.848833" level="INFO">Successfully changed active context: context=1a1c0c89-3a14-40b2-96d8-1fa87355d937</msg>
+<msg time="2025-10-25T22:57:42.920271" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-10-25T22:57:34.054545" elapsed="8.683640">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=input[value="Male"]". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=input[value="Male"]
+</status>
 </test>
 <doc>Suite de teste com RobotFramework na tela Register</doc>
-<status status="FAIL" start="2025-10-25T21:35:34.953138" elapsed="7.297924"/>
+<status status="FAIL" start="2025-10-25T22:57:33.529770" elapsed="9.393471"/>
 </suite>
-<status status="FAIL" start="2025-10-25T21:35:34.924403" elapsed="7.391304"/>
+<status status="FAIL" start="2025-10-25T22:57:33.513732" elapsed="9.423569"/>
 </suite>
-<status status="FAIL" start="2025-10-25T21:35:34.878744" elapsed="7.445326"/>
+<status status="FAIL" start="2025-10-25T22:57:33.453456" elapsed="9.491319"/>
 </suite>
 <statistics>
 <total>
